@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
       id: 1,
       title: "Decentralix DEX",
       description: "A decentralized exchange platform built on Ethereum Testnet that enables token swaps with minimal fees and maximum security. Features include liquidity pools, yield farming, and token staking mechanisms.",
-      image: "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://i.imgur.com/cazHaB2.jpeg",
       tags: ["Solidity", "React", "Web3.js", "Ethereum"],
       githubUrl: "https://github.com/DecentralixBase/Decentralix-DEX-V2",
       liveUrl: "https://decentralix-dex-v2.vercel.app/"
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
       id: 3,
       title: "NFT Marketplace On Ethereum Testnet",
       description: "Developed a Full NFT Market Place On Ethereum testnet Networks, Including Buying & Selling Of NFTs.",
-      image: "https://images.pexels.com/photos/7788009/pexels-photo-7788009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://ibb.co/HDtF0zMw",
       tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"
