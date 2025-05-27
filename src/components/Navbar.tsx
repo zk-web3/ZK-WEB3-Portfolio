@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
                 className="text-gray-400 hover:text-white transition-colors duration-300">
                 <Github size={20} />
               </a>
-              <a href="www.linkedin.com/in/zeeshan-khan-028a7a1a5/" target="_blank" rel="noopener noreferrer"
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-300">
                 <Linkedin size={20} />
               </a>
