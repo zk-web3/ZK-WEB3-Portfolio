@@ -1,0 +1,114 @@
+import React from 'react';
+import { ArrowUp, Github, Linkedin, Twitter } from 'lucide-react';
+
+const Footer: React.FC = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  return (
+    <footer className="bg-slate-900 pt-16 pb-8">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          <div className="md:col-span-2">
+            <a href="#home" className="text-2xl font-bold text-white flex items-center mb-4">
+              <span className="text-blue-500">Z</span>
+              <span className="text-purple-500">K</span>
+            </a>
+            <p className="text-gray-400 mb-6 max-w-md">
+              Building innovative blockchain solutions for the decentralized future. Specializing in DeFi, smart contracts, and Web3 integration.
+            </p>
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                className="bg-slate-800 hover:bg-slate-700 h-10 w-10 rounded-full flex items-center justify-center transition-colors duration-300"
+              >
+                <Github className="text-gray-400 hover:text-white transition-colors duration-300" size={20} />
+              </a>
+              <a
+                href="#"
+                className="bg-slate-800 hover:bg-slate-700 h-10 w-10 rounded-full flex items-center justify-center transition-colors duration-300"
+              >
+                <Linkedin className="text-gray-400 hover:text-white transition-colors duration-300" size={20} />
+              </a>
+              <a
+                href="#"
+                className="bg-slate-800 hover:bg-slate-700 h-10 w-10 rounded-full flex items-center justify-center transition-colors duration-300"
+              >
+                <Twitter className="text-gray-400 hover:text-white transition-colors duration-300" size={20} />
+              </a>
+            </div>
+          </div>
+          
+          <div>
+            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="#home" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#projects" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#skills" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2">
+              <li className="text-gray-400">
+                San Francisco, California
+              </li>
+              <li>
+                <a href="mailto:contact@zeeshankhan.dev" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  contact@zeeshankhan.dev
+                </a>
+              </li>
+              <li>
+                <a href="tel:+15551234567" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  +1 (555) 123-4567
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-500 text-sm mb-4 md:mb-0">
+            &copy; {new Date().getFullYear()} Zeeshan Khan. All rights reserved.
+          </p>
+          <button
+            onClick={scrollToTop}
+            className="bg-slate-800 hover:bg-slate-700 h-10 w-10 rounded-full flex items-center justify-center transition-colors duration-300"
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="text-gray-400 hover:text-white transition-colors duration-300" size={20} />
+          </button>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
