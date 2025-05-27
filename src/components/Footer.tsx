@@ -78,16 +78,16 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
               <li className="text-gray-400">
-                San Francisco, California
+                New Delhi, India
               </li>
               <li>
-                <a href="mailto:contact@zeeshankhan.dev" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  contact@zeeshankhan.dev
+                <a href="mailto:zk2143973@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  zk2143973@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+15551234567" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  +1 (555) 123-4567
+                <a href="tel:+91 9058822896" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  +91 9058822896
                 </a>
               </li>
             </ul>
