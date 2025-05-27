@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
       id: 3,
       title: "NFT Marketplace On Ethereum Testnet",
       description: "Developed a Full NFT Market Place On Ethereum testnet Networks, Including Buying & Selling Of NFTs.",
-      image: "",
+      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
       tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com"
