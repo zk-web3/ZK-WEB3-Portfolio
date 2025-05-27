@@ -21,8 +21,8 @@ const Projects: React.FC = () => {
       description: "A decentralized exchange platform built on Ethereum Testnet that enables token swaps with minimal fees and maximum security. Features include liquidity pools, yield farming, and token staking mechanisms.",
       image: "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       tags: ["Solidity", "React", "Web3.js", "Ethereum"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
+      githubUrl: "https://github.com/DecentralixBase/Decentralix-DEX-V2",
+      liveUrl: "https://decentralix-dex-v2.vercel.app/"
     },
     {
       id: 2,
