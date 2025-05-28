@@ -35,12 +35,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: "NFT Marketplace On Ethereum Testnet",
-      description: "Developed a Full NFT Market Place On Ethereum testnet Networks, Including Buying & Selling Of NFTs.",
+      title: "zkVault NFT Marketplace",
+      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
       image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
       tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
+      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
+      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
     }
   ];
 
