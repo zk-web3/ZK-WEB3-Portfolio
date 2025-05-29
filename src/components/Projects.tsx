@@ -26,12 +26,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 2,
-      title: "Swisstronik Testnet",
-      description: "Contributed to the Swisstronik testnet implementation, focusing on privacy-preserving smart contracts and secure transaction mechanisms. Enhanced network stability and transaction throughput.",
-      image: "https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      tags: ["Blockchain", "Privacy", "Smart Contracts", "Rust"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com"
+      title: "zkGasTracker",
+      description: "Gas Tracker Of Multiple Chain, Inlcuding Ethereum, Optimism, Arbitrum And Polygon Using API Services In Back-end",
+      image: "https://iili.io/3yClvlS.jpg",
+      tags: ["Blockchain", "API", "gasTracker", "JavaScript", "TypeScript, Block Explorer"],
+      githubUrl: "https://github.com/DecentralixBase/zkGasTracker",
+      liveUrl: "https://zk-gas-tracker-zw2a.vercel.app/"
     },
     {
       id: 3,
