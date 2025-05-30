@@ -33,8 +33,6 @@ const Projects: React.FC = () => {
       githubUrl: "https://github.com/DecentralixBase/zkGasTracker",
       liveUrl: "https://zk-gas-tracker-zw2a.vercel.app/"
     },
-    
-    
     {
       id: 3,
       title: "zkVault NFT Marketplace",
@@ -43,84 +41,114 @@ const Projects: React.FC = () => {
       tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
       githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
       liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
-    }
-
+    },
     {
       id: 4,
-      title: "zkVault NFT Marketplace",
-      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
-      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
-      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
-      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
-      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
-    }
-
+      title: "Project 4",
+      description: "Placeholder description for Project 4.",
+      image: "", // Add a placeholder image URL or leave empty
+      tags: [], // Add placeholder tags or leave empty
+      githubUrl: "", // Add placeholder GitHub URL or leave empty
+      liveUrl: "" // Add placeholder live URL or leave empty
+    },
     {
       id: 5,
-      title: "zkVault NFT Marketplace",
-      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
-      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
-      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
-      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
-      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
-    }
-
-
+      title: "Project 5",
+      description: "Placeholder description for Project 5.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
+    },
     {
       id: 6,
-      title: "zkVault NFT Marketplace",
-      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
-      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
-      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
-      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
-      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
-    }
-
-
-
+      title: "Project 6",
+      description: "Placeholder description for Project 6.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
+    },
     {
       id: 7,
-      title: "zkVault NFT Marketplace",
-      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
-      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
-      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
-      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
-      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
-    }
-
-
-
+      title: "Project 7",
+      description: "Placeholder description for Project 7.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
+    },
     {
       id: 8,
-      title: "zkVault NFT Marketplace",
-      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
-      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
-      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
-      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
-      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
-    }
-
-
-
-
+      title: "Project 8",
+      description: "Placeholder description for Project 8.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
+    },
     {
       id: 9,
-      title: "zkVault NFT Marketplace",
-      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
-      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
-      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
-      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
-      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
-    }
-
+      title: "Project 9",
+      description: "Placeholder description for Project 9.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
+    },
     {
       id: 10,
-      title: "zkVault NFT Marketplace",
-      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
-      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
-      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
-      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
-      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
+      title: "Project 10",
+      description: "Placeholder description for Project 10.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
+    },
+    {
+      id: 11,
+      title: "Project 11",
+      description: "Placeholder description for Project 11.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
+    },
+    {
+      id: 12,
+      title: "Project 12",
+      description: "Placeholder description for Project 12.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
+    },
+    {
+      id: 13,
+      title: "Project 13",
+      description: "Placeholder description for Project 13.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
+    },
+    {
+      id: 14,
+      title: "Project 14",
+      description: "Placeholder description for Project 14.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
+    },
+    {
+      id: 15,
+      title: "Project 15",
+      description: "Placeholder description for Project 15.",
+      image: "",
+      tags: [],
+      githubUrl: "",
+      liveUrl: ""
     }
   ];
 
@@ -167,7 +195,7 @@ const Projects: React.FC = () => {
                       key={index} 
                       className="text-xs bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full"
                     >
-                      {tag}
+                      {tag} 
                     </span>
                   ))}
                 </div>
