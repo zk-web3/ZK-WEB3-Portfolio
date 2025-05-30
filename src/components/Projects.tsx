@@ -33,8 +33,88 @@ const Projects: React.FC = () => {
       githubUrl: "https://github.com/DecentralixBase/zkGasTracker",
       liveUrl: "https://zk-gas-tracker-zw2a.vercel.app/"
     },
+    
+    
     {
       id: 3,
+      title: "zkVault NFT Marketplace",
+      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
+      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
+      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
+      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
+      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
+    }
+
+    {
+      id: 4,
+      title: "zkVault NFT Marketplace",
+      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
+      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
+      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
+      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
+      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
+    }
+
+    {
+      id: 5,
+      title: "zkVault NFT Marketplace",
+      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
+      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
+      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
+      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
+      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
+    }
+
+
+    {
+      id: 6,
+      title: "zkVault NFT Marketplace",
+      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
+      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
+      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
+      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
+      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
+    }
+
+
+
+    {
+      id: 7,
+      title: "zkVault NFT Marketplace",
+      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
+      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
+      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
+      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
+      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
+    }
+
+
+
+    {
+      id: 8,
+      title: "zkVault NFT Marketplace",
+      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
+      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
+      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
+      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
+      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
+    }
+
+
+
+
+    {
+      id: 9,
+      title: "zkVault NFT Marketplace",
+      description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
+      image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
+      tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
+      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
+      liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
+    }
+
+    {
+      id: 10,
       title: "zkVault NFT Marketplace",
       description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
       image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
