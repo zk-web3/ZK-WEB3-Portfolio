@@ -53,12 +53,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 5,
-      title: "Project 5",
-      description: "Placeholder description for Project 5.",
-      image: "",
-      tags: [],
-      githubUrl: "",
-      liveUrl: ""
+      title: "DeFi Dashboard With ENS Supported",
+      description: "DeFi Dashboard Built Using API Of Infura, Zapper And Other RPC APIs To Get Data Of A Particular Wallet And ENS Name",
+      image: "https://i.postimg.cc/RVh6Ybrb/defi-dashboad.jpg",
+      tags: ["DeFi", "Explorer", "Blockchain"],
+      githubUrl: "https://github.com/DecentralixBase/DeFi-Portfolio-Visualizer",
+      liveUrl: "https://de-fi-portfolio-visualizer.vercel.app/"
     },
     {
       id: 6,
