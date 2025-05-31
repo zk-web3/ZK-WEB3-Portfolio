@@ -44,12 +44,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 4,
-      title: "Project 4",
-      description: "Placeholder description for Project 4.",
-      image: "", // Add a placeholder image URL or leave empty
-      tags: [], // Add placeholder tags or leave empty
-      githubUrl: "", // Add placeholder GitHub URL or leave empty
-      liveUrl: "" // Add placeholder live URL or leave empty
+      title: "zkNews",
+      description: "News Aggregator For Crypto, Blockchain, And Web3.",
+      image: "https://ibb.co/N2B9Ysst", // Add a placeholder image URL or leave empty
+      tags: ["News", "Crypto", "Blockchain", "Web3"], // Add placeholder tags or leave empty
+      githubUrl: "https://github.com/DecentralixBase/zknews", // Add placeholder GitHub URL or leave empty
+      liveUrl: "https://zknews-v2.vercel.app/" // Add placeholder live URL or leave empty
     },
     {
       id: 5,
