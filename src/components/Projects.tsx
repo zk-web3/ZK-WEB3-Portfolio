@@ -71,12 +71,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 7,
-      title: "Project 7",
-      description: "Placeholder description for Project 7.",
-      image: "",
-      tags: [],
-      githubUrl: "",
-      liveUrl: ""
+      title: "zkScan Multichain Analyzer",
+      description: "zkScan A Multichain Analyzer For Multiple EVM Chains Of Wallet Address.",
+      image: "https://i.postimg.cc/qvTF9Qyy/explorer.jpg",
+      tags: ["Analyzer","DeFi","Explorer"],
+      githubUrl: "https://github.com/DecentralixBase/multioc",
+      liveUrl: "https://multioc3.vercel.app/"
     },
     {
       id: 8,
