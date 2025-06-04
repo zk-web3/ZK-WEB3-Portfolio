@@ -62,12 +62,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 6,
-      title: "Project 6",
-      description: "Placeholder description for Project 6.",
-      image: "",
-      tags: [],
-      githubUrl: "",
-      liveUrl: ""
+      title: "Fear & Greed Index (Futuristic Version)",
+      description: "Fear & Greed Index With Futuristic UI And Data.",
+      image: "https://i.postimg.cc/YChLCPn5/FVG.png",
+      tags: ["F G Index", "Crypto Index" , "Indexation"],
+      githubUrl: "https://github.com/DecentralixBase/F-G-Index",
+      liveUrl: "https://fgindex-v2.vercel.app/"
     },
     {
       id: 7,
