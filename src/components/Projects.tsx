@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
       description: "A decentralized exchange platform built on Ethereum Testnet that enables token swaps with minimal fees and maximum security. Features include liquidity pools, yield farming, and token staking mechanisms.",
       image: "https://i.imgur.com/cazHaB2.jpeg",
       tags: ["Solidity", "React", "Web3.js", "Ethereum"],
-      githubUrl: "https://github.com/DecentralixBase/Decentralix-DEX-V2",
+      githubUrl: "https://github.com/zk-web3/Decentralix-DEX-V2",
       liveUrl: "https://decentralix-dex-v2.vercel.app/"
     },
     {
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
       description: "Gas Tracker Of Multiple Chain, Inlcuding Ethereum, Optimism, Arbitrum And Polygon Using API Services In Back-end",
       image: "https://iili.io/3yClvlS.jpg",
       tags: ["Blockchain", "API", "gasTracker", "JavaScript", "TypeScript, Block Explorer"],
-      githubUrl: "https://github.com/DecentralixBase/zkGasTracker",
+      githubUrl: "https://github.com/zk-web3/zkGasTracker",
       liveUrl: "https://zk-gas-tracker-zw2a.vercel.app/"
     },
     {
@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
       description: "zkVault A Full NFT Market Place On Ethereum testnet Networks, Including Creating,Buying & Selling Of NFTs.",
       image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
       tags: ["Uniswap", "Layer-2", "DeFi", "TypeScript"],
-      githubUrl: "https://github.com/DecentralixBase/zkVault-NFT-Marketplace",
+      githubUrl: "https://github.com/zk-web3/zkVault-NFT-Marketplace",
       liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
     },
     {
@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
       description: "News Aggregator For Crypto, Blockchain, And Web3.",
       image: "https://i.postimg.cc/h4ry4N74/web3-news.jpg", // Add a placeholder image URL or leave empty
       tags: ["News", "Crypto", "Blockchain", "Web3"], // Add placeholder tags or leave empty
-      githubUrl: "https://github.com/DecentralixBase/zknews", // Add placeholder GitHub URL or leave empty
+      githubUrl: "https://github.com/zk-web3/zknews", // Add placeholder GitHub URL or leave empty
       liveUrl: "https://zknews-v2.vercel.app" // Add placeholder live URL or leave empty
     },
     {
@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
       description: "DeFi Dashboard Built Using API Of Infura, Zapper And Other RPC APIs To Get Data Of A Particular Wallet And ENS Name",
       image: "https://i.postimg.cc/RVh6Ybrb/defi-dashboad.jpg",
       tags: ["DeFi", "Explorer", "Blockchain"],
-      githubUrl: "https://github.com/DecentralixBase/DeFi-Portfolio-Visualizer",
+      githubUrl: "https://github.com/zk-web3/DeFi-Portfolio-Visualizer",
       liveUrl: "https://de-fi-portfolio-visualizer.vercel.app/"
     },
     {
@@ -66,7 +66,7 @@ const Projects: React.FC = () => {
       description: "Fear & Greed Index With Futuristic UI And Data.",
       image: "https://i.postimg.cc/YChLCPn5/FVG.png",
       tags: ["F G Index", "Crypto Index" , "Indexation"],
-      githubUrl: "https://github.com/DecentralixBase/F-G-Index",
+      githubUrl: "https://github.com/zk-web3/F-G-Index",
       liveUrl: "https://fgindex-v2.vercel.app/"
     },
     {
@@ -75,7 +75,7 @@ const Projects: React.FC = () => {
       description: "zkScan A Multichain Analyzer For Multiple EVM Chains Of Wallet Address.",
       image: "https://i.postimg.cc/qvTF9Qyy/explorer.jpg",
       tags: ["Analyzer","DeFi","Explorer"],
-      githubUrl: "https://github.com/DecentralixBase/multioc",
+      githubUrl: "https://github.com/zk-web3/multioc",
       liveUrl: "https://multioc3.vercel.app/"
     },
     {
