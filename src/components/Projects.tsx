@@ -163,7 +163,8 @@ const Projects: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Projects</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Explore my recent blockchain and Web3 projects, showcasing innovative solutions and technical expertise (Note: Some Projects Wont Work Because They API Keys So I Wont Push The API Keys To Github Pub Repo)
+            Explore my recent blockchain and Web3 projects, showcasing innovative solutions and technical expertise 
+            (Note: Some Projects Wont Work Because They API Keys So I Wont Push The API Keys To Github Pub Repo)
           </p>
         </div>
 
