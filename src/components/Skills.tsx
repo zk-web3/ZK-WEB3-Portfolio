@@ -18,7 +18,9 @@ const Skills: React.FC = () => {
     { name: "TypeScript", level: 80, color: "#B48EAD" },
     { name: "Hardhat/Truffle", level: 85, color: "#D08770" },
     { name: "Blockchain Architecture", level: 90, color: "#EBCB8B" },
+    { name: "Rust", level: 90, color: "#EBCB8B" },
   ];
+
 
   const blockchainTechnologies = [
     "Ethereum", "Polygon", "Solana", "Avalanche", "BSC", "Taiko",
