@@ -80,12 +80,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 8,
-      title: "Project 8",
-      description: "Placeholder description for Project 8.",
+      title: "Token Tracker (Rust)",
+      description: "Token Tracker On Rust, Built On GUI Using Rust Library And Other Packages ",
       image: "",
-      tags: [],
-      githubUrl: "",
-      liveUrl: ""
+      tags: ["Rust", "GUI", "Token Tracker"],
+      githubUrl: "https://github.com/zk-web3/Rust-Token-Tracker",
+      liveUrl: "https://rust-token-tracker.vercel.app/"
     },
     {
       id: 9,
