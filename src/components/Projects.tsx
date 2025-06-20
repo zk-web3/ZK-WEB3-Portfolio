@@ -89,12 +89,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 9,
-      title: "Project 9",
-      description: "Placeholder description for Project 9.",
+      title: "Chain Tracker (Rust)",
+      description: "Chain Tracker On Rust Built On GUI With Rust Library And Tools",
       image: "",
-      tags: [],
-      githubUrl: "",
-      liveUrl: ""
+      tags: ["Rust","Explorer","DeFi Dashboard"],
+      githubUrl: "https://github.com/zk-web3/rust-defi-dashboard",
+      liveUrl: "https://rust-defi-dashboard.vercel.app/"
     },
     {
       id: 10,
