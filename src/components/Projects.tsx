@@ -82,7 +82,7 @@ const Projects: React.FC = () => {
       id: 8,
       title: "Token Tracker (Rust)",
       description: "Token Tracker On Rust, Built On GUI Using Rust Library And Other Packages ",
-      image: "",
+      image: "https://ibb.co/Z6Tv7bBf",
       tags: ["Rust", "GUI", "Token Tracker"],
       githubUrl: "https://github.com/zk-web3/Rust-Token-Tracker",
       liveUrl: "https://rust-token-tracker.vercel.app/"
@@ -91,7 +91,7 @@ const Projects: React.FC = () => {
       id: 9,
       title: "Chain Tracker (Rust)",
       description: "Chain Tracker On Rust Built On GUI With Rust Library And Tools",
-      image: "",
+      image: "https://ibb.co/8nC1GRdP",
       tags: ["Rust","Explorer","DeFi Dashboard"],
       githubUrl: "https://github.com/zk-web3/rust-defi-dashboard",
       liveUrl: "https://rust-defi-dashboard.vercel.app/"
