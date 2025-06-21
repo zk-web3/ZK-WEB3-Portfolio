@@ -210,7 +210,7 @@ const Projects: React.FC = () => {
 
         <div className="text-center mt-12">
           <a
-            href="https://github.com/DecentralixBase?tab=repositories"
+            href="https://github.com/zk-web3?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white font-medium rounded-lg transition-colors duration-300"
