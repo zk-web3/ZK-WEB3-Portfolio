@@ -101,7 +101,7 @@ const Projects: React.FC = () => {
       title: "Merkle Tree WL Tool",
       description: "Merkle Tree WL Tool Used For Airdrop And WL Built On Rust Using GUI Tools Of Rust.",
       image: "https://i.postimg.cc/XYHJmvPb/Merkle.png",
-      tags: ["Rust", "Merkle", "WL & Airdrop Tool"]
+      tags: ["Rust", "Merkle", "WL & Airdrop Tool"],
       githubUrl: "https://github.com/zk-web3/merkle-tree-wl",
       liveUrl: "https://merkle-tree-wl.vercel.app/"
     },
