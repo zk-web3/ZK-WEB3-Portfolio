@@ -21,7 +21,7 @@ const Projects = () => {
       title: "zkGasTracker",
       description: "Gas Tracker Of Multiple Chain.",
       image: "https://iili.io/3yClvlS.jpg",
-      tags: ["JavaScript", "Tracker"],
+      tags: ["JavaScript", "Tracker","Explorer"],
       githubUrl: "https://github.com/zk-web3/zkGasTracker",
       liveUrl: "https://zk-gas-tracker-zw2a.vercel.app/"
     },
@@ -30,7 +30,7 @@ const Projects = () => {
       title: "zkVault NFT Marketplace",
       description: "NFT Market Place on Ethereum testnet.",
       image: "https://i.postimg.cc/D025x35d/1000090900.jpg",
-      tags: ["TypeScript", "DeFi"],
+      tags: ["TypeScript", "DeFi","JavaScript"],
       githubUrl: "https://github.com/zk-web3/zkVault-NFT-Marketplace",
       liveUrl: "https://zk-vault-nft-marketplace.vercel.app/"
     },
@@ -72,19 +72,19 @@ const Projects = () => {
     },
     {
       id: 8,
-      title: "Token Tracker (Rust)",
-      description: "Token Tracker Built on Rust GUI.",
+      title: "Token Tracker On Javascript & TypeScript",
+      description: "Token Tracker Built on JavaScript & TypeScript.",
       image: "https://i.postimg.cc/gj8FbNX6/Token-tarcker.png",
-      tags: ["Rust", "Tracker"],
+      tags: ["JavaScript","TypeScript", "Tracker","Web3"],
       githubUrl: "https://github.com/zk-web3/Rust-Token-Tracker",
       liveUrl: "https://rust-token-tracker.vercel.app/"
     },
     {
       id: 9,
-      title: "Chain Tracker (Rust)",
-      description: "Chain Tracker On Rust GUI.",
+      title: "Chain Tracker",
+      description: "Chain Tracker On JavaScript & Typescript",
       image: "https://i.postimg.cc/xd4WkWLz/Multichainn.png",
-      tags: ["Rust", "Tracker"],
+      tags: ["Typescript", "JavaScript","Explorer","Index"],
       githubUrl: "https://github.com/zk-web3/rust-defi-dashboard",
       liveUrl: "https://rust-defi-dashboard.vercel.app/"
     },
@@ -93,7 +93,7 @@ const Projects = () => {
       title: "Merkle Tree WL Tool",
       description: "Merkle Tool Built On Rust GUI.",
       image: "https://i.postimg.cc/XYHJmvPb/Merkle.png",
-      tags: ["Rust", "Tools"],
+      tags: ["Typescript", "JavaScript", "Tools"],
       githubUrl: "https://github.com/zk-web3/merkle-tree-wl",
       liveUrl: "https://merkle-tree-wl.vercel.app/"
     }
