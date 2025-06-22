@@ -106,7 +106,7 @@ const Projects = () => {
       tags: ["JavaScript", "Rust", "Explorer","ethereum","ether.js","Index"],
       githubUrl: "https://github.com/zk-web3/rust-gui-token-tracker",
       liveUrl: "https://rust-gui-token-tracker.vercel.app/"
-    }
+    },
   ];
 
   const mainCategories = ["All", "JavaScript", "TypeScript", "Rust", "Python"];
