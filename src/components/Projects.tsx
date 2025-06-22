@@ -97,6 +97,16 @@ const Projects = () => {
       githubUrl: "https://github.com/zk-web3/merkle-tree-wl",
       liveUrl: "https://merkle-tree-wl.vercel.app/"
     }
+
+    {
+      id: 11,
+      title: "zkToken Tracker (Rust Web Version)",
+      description: "zkToken Tracker Built On Rust WebApp.",
+      image: "https://i.postimg.cc/mgvyBjnj/RUST.png",
+      tags: ["JavaScript", "Rust", "Explorer","ethereum","ether.js","Index"],
+      githubUrl: "https://github.com/zk-web3/rust-gui-token-tracker",
+      liveUrl: "https://rust-gui-token-tracker.vercel.app/"
+    }
   ];
 
   const mainCategories = ["All", "JavaScript", "TypeScript", "Rust", "Python"];
