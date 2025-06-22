@@ -96,7 +96,7 @@ const Projects = () => {
       tags: ["Typescript", "JavaScript", "Tools"],
       githubUrl: "https://github.com/zk-web3/merkle-tree-wl",
       liveUrl: "https://merkle-tree-wl.vercel.app/"
-    }
+    },
 
     {
       id: 11,
