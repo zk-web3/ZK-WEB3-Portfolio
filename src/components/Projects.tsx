@@ -103,7 +103,7 @@ const Projects = () => {
       title: "zkToken Tracker (Rust Web Version)",
       description: "zkToken Tracker Built On Rust WebApp.",
       image: "https://i.postimg.cc/mgvyBjnj/RUST.png",
-      tags: ["JavaScript", "Rust", "Explorer","ethereum","ether.js","Index"],
+      tags: ["JavaScript", "Rust", "Explorer","ethereum","ether.js","Index","Tracker"],
       githubUrl: "https://github.com/zk-web3/rust-gui-token-tracker",
       liveUrl: "https://rust-gui-token-tracker.vercel.app/"
     },
