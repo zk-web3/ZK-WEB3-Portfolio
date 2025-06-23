@@ -107,7 +107,20 @@ const Projects = () => {
       githubUrl: "https://github.com/zk-web3/rust-gui-token-tracker",
       liveUrl: "https://rust-gui-token-tracker.vercel.app/"
     },
+
+    {
+      id: 12,
+      title: "zkChain Tracker",
+      description: "zkChain Tracker Include L1 And L2 Chains.",
+      image: "https://i.postimg.cc/qqZMHqmx/zkchain.png",
+      tags: ["JavaScript", "TypeScript", "Explorer","ethereum","ether.js","Index","Next.js"],
+      githubUrl: "https://github.com/zk-web3/chain-analyzer",
+      liveUrl: "https://chain-analyzer-l1.vercel.app/"
+    },
   ];
+
+  
+
 
   const mainCategories = ["All", "JavaScript", "TypeScript", "Rust", "Python"];
   const subCategories = ["All", "DeFi", "Tracker", "News", "Index", "Explorer", "Tools"];
