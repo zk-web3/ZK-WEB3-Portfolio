@@ -62,15 +62,15 @@ const Navbar: React.FC = () => {
               ))}
             </ul>
             <div className="flex space-x-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://github.com/zk-web3?tab=repositories" target="_blank" rel="noopener noreferrer" 
                 className="text-gray-400 hover:text-white transition-colors duration-300">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/zeeshan-khan-028a7a1a5/" target="_blank" rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-300">
                 <Linkedin size={20} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://x.com/cryptozkta" target="_blank" rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-300">
                 <Twitter size={20} />
               </a>
@@ -108,15 +108,15 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
           <div className="flex space-x-6 pt-2 pb-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/zk-web3?tab=repositories" target="_blank" rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors duration-300">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/zeeshan-khan-028a7a1a5/" target="_blank" rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300">
               <Linkedin size={20} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://x.com/cryptozkta" target="_blank" rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-300">
               <Twitter size={20} />
             </a>
