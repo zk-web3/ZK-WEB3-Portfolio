@@ -1,9 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { ArrowDown } from 'lucide-react';
 
-const HEX_RADIUS = 36; // Size of each hexagon
-const HEX_GAP = 8; // Gap between hexagons
-const ANIMATION_SPEED = 0.5; // Speed of hexagon movement
+const DOTS = 18; // Number of floating dots
+const COLORS = [
+  'rgba(99,102,241,0.7)', // Neon blue
+  'rgba(139,92,246,0.7)', // Neon purple
+  'rgba(56,189,248,0.7)', // Cyan
+  'rgba(236,72,153,0.7)', // Pink
+];
 
 const Hero: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -15,64 +19,67 @@ const Hero: React.FC = () => {
     if (!ctx) return;
 
     let animationFrameId: number;
-    let time = 0;
+    let width = window.innerWidth;
+    let height = window.innerHeight;
 
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
+    // Dot definition
+    const dots = Array.from({ length: DOTS }).map(() => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      r: Math.random() * 8 + 8,
+      dx: (Math.random() - 0.5) * 0.3,
+      dy: (Math.random() - 0.5) * 0.3,
+      color: COLORS[Math.floor(Math.random() * COLORS.length)],
+      glow: Math.random() * 18 + 18,
+    }));
 
-    function drawHexagon(cx: number, cy: number, radius: number, glowColor: string, fillColor: string, phase: number) {
-      ctx.save();
-      ctx.beginPath();
-      for (let i = 0; i < 6; i++) {
-        const angle = Math.PI / 3 * i + phase;
-        const x = cx + radius * Math.cos(angle);
-        const y = cy + radius * Math.sin(angle);
-        if (i === 0) ctx.moveTo(x, y);
-        else ctx.lineTo(x, y);
+    function resizeCanvas() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+    }
+
+    function drawGradient() {
+      const grad = ctx.createLinearGradient(0, 0, width, height);
+      grad.addColorStop(0, '#1e293b'); // slate-900
+      grad.addColorStop(0.5, '#312e81'); // indigo-900
+      grad.addColorStop(1, '#7c3aed'); // purple-600
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, width, height);
+    }
+
+    function drawDots() {
+      for (const dot of dots) {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(dot.x, dot.y, dot.r, 0, Math.PI * 2);
+        ctx.shadowColor = dot.color;
+        ctx.shadowBlur = dot.glow;
+        ctx.globalAlpha = 0.7;
+        ctx.fillStyle = dot.color;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+        ctx.restore();
       }
-      ctx.closePath();
-      ctx.shadowColor = glowColor;
-      ctx.shadowBlur = 16;
-      ctx.strokeStyle = glowColor;
-      ctx.lineWidth = 2.5;
-      ctx.stroke();
-      ctx.shadowBlur = 0;
-      ctx.globalAlpha = 0.15;
-      ctx.fillStyle = fillColor;
-      ctx.fill();
-      ctx.globalAlpha = 1;
-      ctx.restore();
+    }
+
+    function updateDots() {
+      for (const dot of dots) {
+        dot.x += dot.dx;
+        dot.y += dot.dy;
+        // Bounce off edges
+        if (dot.x < -dot.r) dot.x = width + dot.r;
+        if (dot.x > width + dot.r) dot.x = -dot.r;
+        if (dot.y < -dot.r) dot.y = height + dot.r;
+        if (dot.y > height + dot.r) dot.y = -dot.r;
+      }
     }
 
     function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      const width = canvas.width;
-      const height = canvas.height;
-      const hexHeight = Math.sqrt(3) * HEX_RADIUS;
-      const xOffset = HEX_RADIUS * 1.5 + HEX_GAP;
-      const yOffset = hexHeight + HEX_GAP;
-      const phase = Math.sin(time / 60) * 0.2;
-
-      for (let row = -2; row < Math.ceil(height / yOffset) + 2; row++) {
-        for (let col = -2; col < Math.ceil(width / xOffset) + 2; col++) {
-          // Offset every other row
-          const x = col * xOffset + ((row % 2) * xOffset) / 2;
-          const y = row * yOffset;
-          // Animate hexagons with a wave
-          const localPhase = phase + Math.sin((col + row) / 2 + time / 80) * 0.3;
-          drawHexagon(
-            x + width / 10,
-            y + height / 10,
-            HEX_RADIUS,
-            'rgba(99,102,241,0.8)', // Neon blue glow
-            'rgba(139,92,246,0.5)', // Purple fill
-            localPhase
-          );
-        }
-      }
-      time += ANIMATION_SPEED;
+      drawGradient();
+      drawDots();
+      updateDots();
       animationFrameId = requestAnimationFrame(animate);
     }
 
