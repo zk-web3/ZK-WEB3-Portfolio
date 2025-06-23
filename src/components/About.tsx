@@ -30,15 +30,15 @@ const About: React.FC = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-slate-800/50 p-4 rounded-lg">
                 <p className="text-blue-400 font-semibold mb-1">Experience</p>
-                <p className="text-white text-lg">5+ Years</p>
+                <p className="text-white text-lg">6+ Years</p>
               </div>
               <div className="bg-slate-800/50 p-4 rounded-lg">
                 <p className="text-blue-400 font-semibold mb-1">Projects</p>
-                <p className="text-white text-lg">20+ Completed</p>
+                <p className="text-white text-lg">15+ Completed</p>
               </div>
               <div className="bg-slate-800/50 p-4 rounded-lg">
                 <p className="text-blue-400 font-semibold mb-1">Clients</p>
-                <p className="text-white text-lg">21+ Satisfied</p>
+                <p className="text-white text-lg">20+ Satisfied</p>
               </div>
               <div className="bg-slate-800/50 p-4 rounded-lg">
                 <p className="text-blue-400 font-semibold mb-1">Contributions</p>
