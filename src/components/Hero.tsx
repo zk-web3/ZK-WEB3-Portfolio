@@ -1,105 +1,80 @@
 import React, { useEffect, useRef } from 'react';
 import { ArrowDown } from 'lucide-react';
 
+const HEX_RADIUS = 36; // Size of each hexagon
+const HEX_GAP = 8; // Gap between hexagons
+const ANIMATION_SPEED = 0.5; // Speed of hexagon movement
+
 const Hero: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    let particles: Particle[] = [];
     let animationFrameId: number;
+    let time = 0;
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      initParticles();
     };
 
-    class Particle {
-      x: number;
-      y: number;
-      size: number;
-      speedX: number;
-      speedY: number;
-      color: string;
-
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 3 + 1;
-        this.speedX = Math.random() * 1 - 0.5;
-        this.speedY = Math.random() * 1 - 0.5;
-        this.color = `rgba(${Math.floor(Math.random() * 100 + 155)}, ${Math.floor(
-          Math.random() * 100 + 155
-        )}, ${Math.floor(Math.random() * 255)}, ${Math.random() * 0.2 + 0.1})`;
+    function drawHexagon(cx: number, cy: number, radius: number, glowColor: string, fillColor: string, phase: number) {
+      ctx.save();
+      ctx.beginPath();
+      for (let i = 0; i < 6; i++) {
+        const angle = Math.PI / 3 * i + phase;
+        const x = cx + radius * Math.cos(angle);
+        const y = cy + radius * Math.sin(angle);
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
       }
-
-      update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-
-        if (this.x > canvas.width || this.x < 0) {
-          this.speedX = -this.speedX;
-        }
-
-        if (this.y > canvas.height || this.y < 0) {
-          this.speedY = -this.speedY;
-        }
-      }
-
-      draw() {
-        if (!ctx) return;
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-      }
+      ctx.closePath();
+      ctx.shadowColor = glowColor;
+      ctx.shadowBlur = 16;
+      ctx.strokeStyle = glowColor;
+      ctx.lineWidth = 2.5;
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+      ctx.globalAlpha = 0.15;
+      ctx.fillStyle = fillColor;
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      ctx.restore();
     }
 
-    const initParticles = () => {
-      particles = [];
-      const numberOfParticles = Math.min(
-        Math.floor((canvas.width * canvas.height) / 15000),
-        100
-      );
-      
-      for (let i = 0; i < numberOfParticles; i++) {
-        particles.push(new Particle());
-      }
-    };
-
-    const animate = () => {
-      if (!ctx) return;
+    function animate() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
-      for (let i = 0; i < particles.length; i++) {
-        particles[i].update();
-        particles[i].draw();
-        
-        // Connect particles
-        for (let j = i; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-          
-          if (distance < 100) {
-            ctx.beginPath();
-            ctx.strokeStyle = `rgba(100, 150, 255, ${0.1 * (1 - distance / 100)})`;
-            ctx.lineWidth = 0.5;
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.stroke();
-          }
+      const width = canvas.width;
+      const height = canvas.height;
+      const hexHeight = Math.sqrt(3) * HEX_RADIUS;
+      const xOffset = HEX_RADIUS * 1.5 + HEX_GAP;
+      const yOffset = hexHeight + HEX_GAP;
+      const phase = Math.sin(time / 60) * 0.2;
+
+      for (let row = -2; row < Math.ceil(height / yOffset) + 2; row++) {
+        for (let col = -2; col < Math.ceil(width / xOffset) + 2; col++) {
+          // Offset every other row
+          const x = col * xOffset + ((row % 2) * xOffset) / 2;
+          const y = row * yOffset;
+          // Animate hexagons with a wave
+          const localPhase = phase + Math.sin((col + row) / 2 + time / 80) * 0.3;
+          drawHexagon(
+            x + width / 10,
+            y + height / 10,
+            HEX_RADIUS,
+            'rgba(99,102,241,0.8)', // Neon blue glow
+            'rgba(139,92,246,0.5)', // Purple fill
+            localPhase
+          );
         }
       }
-      
+      time += ANIMATION_SPEED;
       animationFrameId = requestAnimationFrame(animate);
-    };
+    }
 
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
