@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { ArrowUp, Github, Linkedin, Twitter } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -23,32 +23,22 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/zk-web3?tab=repositories"
+                href="#"
                 className="bg-slate-800 hover:bg-slate-700 h-10 w-10 rounded-full flex items-center justify-center transition-colors duration-300"
-                target="_blank" rel="noopener noreferrer"
               >
                 <Github className="text-gray-400 hover:text-white transition-colors duration-300" size={20} />
               </a>
               <a
-                href="https://www.linkedin.com/in/zeeshan-khan-028a7a1a5/"
+                href="#"
                 className="bg-slate-800 hover:bg-slate-700 h-10 w-10 rounded-full flex items-center justify-center transition-colors duration-300"
-                target="_blank" rel="noopener noreferrer"
               >
                 <Linkedin className="text-gray-400 hover:text-white transition-colors duration-300" size={20} />
               </a>
               <a
-                href="https://x.com/cryptozkta"
+                href="#"
                 className="bg-slate-800 hover:bg-slate-700 h-10 w-10 rounded-full flex items-center justify-center transition-colors duration-300"
-                target="_blank" rel="noopener noreferrer"
               >
                 <Twitter className="text-gray-400 hover:text-white transition-colors duration-300" size={20} />
-              </a>
-              <a
-                href="https://instagram.com/l_khan_zeeshan_786_l"
-                className="bg-slate-800 hover:bg-slate-700 h-10 w-10 rounded-full flex items-center justify-center transition-colors duration-300"
-                target="_blank" rel="noopener noreferrer"
-              >
-                <Instagram className="text-pink-400 hover:text-white transition-colors duration-300" size={20} />
               </a>
             </div>
           </div>

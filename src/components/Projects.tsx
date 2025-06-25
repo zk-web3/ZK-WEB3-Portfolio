@@ -117,7 +117,20 @@ const Projects = () => {
       githubUrl: "https://github.com/zk-web3/chain-analyzer",
       liveUrl: "https://chain-analyzer-l1.vercel.app/"
     },
+    
+    {
+      id: 13,
+      title: "zkDArbitrage Dashboard",
+      description: "zkDashboard For Arbitrage Built On Next.js, Typescript, JavaScript And API Indexing.",
+      image: "https://i.postimg.cc/hjw06d46/Darbitrage.png",
+      tags: ["JavaScript", "TypeScript", "Explorer","ethereum","ether.js","Index","Next.js, API"],
+      githubUrl: "https://github.com/zk-web3/zk-DArbitrage-Dashboard",
+      liveUrl: "https://zk-d-arbitrage-dashboard.vercel.app/"
+    },
+  
   ];
+
+
 
   
 
